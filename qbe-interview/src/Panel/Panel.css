@@ -1,0 +1,88 @@
+.panelContainer{
+    height: 96vh;
+
+}
+.panelSubContainer{
+    height: 87vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panelCard{
+    height: 70vh;
+    width: 40vw;
+    background-color: #fff;
+    /* border: 2px solid gainsboro; */
+    box-shadow: 1px 1px 3px 2px gainsboro;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+
+.panelCardInnerBox1, .panelCardInnerBox2{
+    /* border: 1px solid green; */
+    flex: 1;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.registrationHeadingBox{
+    display: flex;
+    justify-content: center;
+}
+.registrationHeading{
+    margin-left: 25px;
+}
+.infoIcon{
+    margin-left: 10px;
+}
+
+input{
+    width: 80%;
+    height: 50px;
+    border: none;
+    background-color: rgb(240, 238, 238);
+    border-bottom: 1px solid;
+    font-size: 15px;
+    padding-left: 25px;
+    margin-top: 15px;
+}
+.text{
+    font-size: 20px;
+    margin-top: 15px;
+}
+.info{
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.buttonContainer{
+    flex: 0.5;
+    /* border: 1px solid green; */
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 15px;
+    border: none;
+    color: gray;
+}
+
+.termsContainer{
+    color: rgb(57, 80, 182);
+    font-size: 14px;
+    padding: 25px 0 0 50px;
+}
