@@ -5,49 +5,51 @@ const Input = ({ toggleState }) => {
     // console.log(toggleState);
     const [inputData, setInputData] = useState('')
     const [errorMessage, setErrorMessage] = useState('')
-    console.log(inputData);
+    const [borderBottom, setBorderBottom] = useState('')
+    // console.log(inputData);
 
     const handleChange = (e) => {
-       let inputVal = e.target.value;
-       const numbersAllowed = /^[0-9\b]+$/;
+        let inputVal = e.target.value;
+        const numbersAllowed = /^[0-9\b]+$/;
 
-       if(numbersAllowed.test(inputVal)){
-        setInputData(inputVal)
-        setErrorMessage('')
-       }
-       else{
-        setInputData('')
-        setErrorMessage('Type only numbers')
-       }
-        // console.log(inputVal);
-        // setInputData(inputVal)
+        if (numbersAllowed.test(inputVal)) {
+            setInputData(inputVal)
+            setErrorMessage('')
+        }
+        else {
+            setInputData('')
+            setErrorMessage('Only numbers are allowed')
+            setBorderBottom('2px solid red')
+        }
     }
     return (
         <div className="inputContainer">
             {
-            toggleState ?
-                <>
-                <input
-                    className='input'
-                    type="text"
-                    placeholder='Postcode'
-                    value={inputData}
-                    onChange={handleChange}
-                />
-                <h3>{errorMessage}</h3>
-                </>
-                :
-                <>
-                <input
-                    className='input'
-                    type="text"
-                    placeholder='Registration number'
-                    value={inputData}
-                    onChange={handleChange}
-                />
-                <h3>{errorMessage}</h3>
-                </>
-                
+                toggleState ?
+                    <>
+                        <input
+                            style={{ borderBottom: borderBottom }}
+                            className='input'
+                            type="text"
+                            placeholder='Postcode'
+                            value={inputData}
+                            onChange={handleChange}
+                        />
+                        <p className='alert'>{errorMessage}</p>
+                    </>
+                    :
+                    <>
+                        <input
+                            style={{ borderBottom: borderBottom }}
+                            className='input'
+                            type="text"
+                            placeholder='Registration number'
+                            value={inputData}
+                            onChange={handleChange}
+                        />
+                        <p className='alert'>{errorMessage}</p>
+                    </>
+
             }
         </div>
     )

@@ -12,4 +12,10 @@
     padding-left: 13px;
     margin-top: 15px;
     letter-spacing: 0.5px;
+    outline: none;
+}
+
+.alert{
+    color: red;
+    font-size: 15px;
 }
