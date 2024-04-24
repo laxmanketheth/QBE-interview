@@ -1,6 +1,7 @@
 import React from 'react'
 import './Panel.css'
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import Toggle from '../components/Toggle/Toggle';
 
 
 const Panel = () => {
@@ -15,7 +16,7 @@ const Panel = () => {
             <div className='panelCardInnerBox1'>
               <h3 className='panelCardHeading'>One more thing</h3>
               <p className='text'>What's your vehicle registration number or garaging postcode?</p>
-              <input type="text" />
+              <Toggle />
             </div>
 
             <div className='panelCardInnerBox2'>
@@ -26,7 +27,6 @@ const Panel = () => {
                   <InfoOutlinedIcon className='infoIcon' />
                 </div>
                 <input
-                  // className='input'
                   type="text"
                   placeholder='Registration number'
                 />
