@@ -3,15 +3,7 @@ import './Steps.css'
 
 const Steps = () => {
   return (
-    // <div>
-    //   <span className='step1'>1</span>
-    //   <span className='dash'>-----------------</span>
-    //   <span className='step2'>2</span>
-    // </div>
-
-
     <>
-     
      <div className='parentContainer'>
 
      <div className='stepsContainer'>
