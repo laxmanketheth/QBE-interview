@@ -1,27 +1,59 @@
 
-import React, { useState } from 'react'
+// import React from 'react'
+// import './Toggle.css'
+
+// const Toggle = ({toggleState, handleToggle}) => {
+
+//     const handleClick = (state) => {
+//         handleToggle(state)
+//     }
+
+//     return (
+//         <div className='tabContainer'>
+//             <div
+//                 className={toggleState === false ? "activeTab" : "tabs"}
+//                 onClick={() => handleClick(false)}
+//             >
+//                 Registration number
+//             </div>
+
+//             <div
+//                 className={toggleState === true ? "activeTab" : "tabs"}
+//                 onClick={() => handleClick(true)}
+//             >
+//                 Postcode
+//             </div>
+//         </div>
+//     )
+// }
+
+// export default Toggle
+
+
+
+
+
+import React from 'react'
 import './Toggle.css'
 
-const Toggle = () => {
+const Toggle = ({toggleState, handleToggle}) => {
 
-    const [toggleState, setToggleState] = useState(false)
-
-    const toggleTab = (state) => {
-        setToggleState(state)
+    const handleClick = (state) => {
+        handleToggle(state)
     }
 
     return (
         <div className='tabContainer'>
             <div
                 className={toggleState === false ? "activeTab" : "tabs"}
-                onClick={() => toggleTab(false)}
+                onClick={() => handleClick(false)}
             >
                 Registration number
             </div>
 
             <div
                 className={toggleState === true ? "activeTab" : "tabs"}
-                onClick={() => toggleTab(true)}
+                onClick={() => handleClick(true)}
             >
                 Postcode
             </div>
@@ -30,3 +62,4 @@ const Toggle = () => {
 }
 
 export default Toggle
+

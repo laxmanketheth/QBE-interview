@@ -1,0 +1,15 @@
+.inputContainer{
+    width: 80%;
+}
+
+.input{
+    width: 80%;
+    height: 50px;
+    border: none;
+    background-color: rgb(240, 238, 238);
+    border-bottom: 1px solid;
+    font-size: 15px;
+    padding-left: 13px;
+    margin-top: 15px;
+    letter-spacing: 0.5px;
+}

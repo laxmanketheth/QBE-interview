@@ -24,11 +24,17 @@
     padding: 30px 0px;
 }
 
-
 .panelCardInnerBox1, .panelCardInnerBox2{
-    /* border: 1px solid green; */
     flex: 1;
-    width: 80%;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.registrationContainer{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,41 +45,35 @@
     display: flex;
     justify-content: center;
 }
+
 .registrationHeading{
     margin-left: 25px;
 }
+
 .infoIcon{
     margin-left: 10px;
 }
 
-input{
-    width: 80%;
-    height: 50px;
-    border: none;
-    background-color: rgb(240, 238, 238);
-    border-bottom: 1px solid;
-    font-size: 15px;
-    padding-left: 25px;
-    margin-top: 15px;
-    letter-spacing: 0.5px;
-}
 .text{
     font-size: 20px;
     margin-top: 15px;
 }
+
 .info{
-    font-size: 13px;
+    font-size: 12px;
     margin-top: 5px;
+    width: 60%;
+    text-align: left;
 }
 
 .buttonContainer{
     flex: 0.5;
-    /* border: 1px solid green; */
     width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 button{
     padding: 15px 25px;
     border-radius: 30px;
