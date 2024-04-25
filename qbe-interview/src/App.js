@@ -1,5 +1,5 @@
 
-import './App.css';
+import './App.scss';
 import Panel from './Panel/Panel';
 import Header from './components/Header/Header';
 

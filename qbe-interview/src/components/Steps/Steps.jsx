@@ -1,25 +1,24 @@
 import React from 'react'
-import './Steps.css'
+import './Steps.scss'
 
 const Steps = () => {
   return (
     <>
-     <div className='parentContainer'>
+      <div className='parentContainer'>
 
-     <div className='stepsContainer'>
+        <div className='stepsContainer'>
+          <span className='step1'>1</span>
+          <span className='dash'>--------------------</span>
+          <span className='step2'>2</span>
+        </div>
 
-        <span className='step1'>1</span>
-        <span className='dash'>--------------------</span>
-        <span className='step2'>2</span>
+        <div className='stepsHeading'>
+          <div className='heading1'>Confirm your details</div>
+          <div className='heading2'>Consent</div>
+        </div>
 
       </div>
 
-      <div className='stepsHeading'>
-        <div className='heading1'>Confirm your details</div>
-        <div className='heading2'>Consent</div>
-      </div>
-
-     </div>
     </>
   )
 }

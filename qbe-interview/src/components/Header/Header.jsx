@@ -1,12 +1,13 @@
 import React from 'react'
 import Steps from '../Steps/Steps'
-import './Header.css'
+import './Header.scss'
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import ClearIcon from '@mui/icons-material/Clear';
+import HorizontalSteps from '../HorizontalSteps/HorizontalSteps';
 
 const Header = () => {
     return (
-        <>
+        <div className='OuterContainer'>
             <div className='container'>
                 <div className='logo'>
                     <img src="QBE logo.png" alt="" />
@@ -26,7 +27,10 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-        </>
+            
+            <HorizontalSteps />
+    
+        </div>
 
     )
 }

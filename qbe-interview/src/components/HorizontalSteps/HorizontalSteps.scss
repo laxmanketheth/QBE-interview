@@ -1,0 +1,45 @@
+@import '../../mixin.scss';
+.stepsBox{
+    color: rgb(221, 219, 219);;
+    width: 100%;
+    height: 6vh;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    @include xxs{
+        display: block;
+    }
+}
+.stepsTextBox{
+    height: 4vh;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    letter-spacing: 0.5px;
+}
+.horizontalLineContainer{
+    height: 2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.horizontalLineContainer > div{
+    width: 49%;
+}
+
+hr{
+    height: 5px;
+}
+.greenLine{
+    border: none;
+    background-color: green;
+}
+.whiteLine{
+    border: none;
+    background-color: rgb(221, 219, 219);
+}

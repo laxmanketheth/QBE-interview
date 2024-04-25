@@ -1,8 +1,14 @@
+@import '../../mixin.scss';
+
 .parentContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    // border: 1px solid;
+    @include xxs{
+        display: none;
+    }
 }
 
 .stepsContainer {

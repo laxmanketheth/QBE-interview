@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
-import './Input.css'
+import './Input.scss'
 
 const Input = ({ toggleState }) => {
     // console.log(toggleState);
     const [inputData, setInputData] = useState('')
     const [errorMessage, setErrorMessage] = useState('')
     const [borderBottom, setBorderBottom] = useState('')
-    // console.log(inputData);
 
     const handleChange = (e) => {
         let inputVal = e.target.value;

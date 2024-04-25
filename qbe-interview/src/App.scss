@@ -1,4 +1,4 @@
-
+@import './mixin.scss';
 *{
   box-sizing: border-box;
   margin: 0px;
@@ -9,9 +9,17 @@
 .App{
   background-color: black;
   height: 110vh;
+  border: 1px solid green;
+  width: 100vw;
+  @include sm{
+    height: 100vh;
+  }
 }
 
 .sub-Container{
   background-color: #fff;
   margin: 0px 40px;
+  @include sm{
+    margin: 0px;
+  }
 }

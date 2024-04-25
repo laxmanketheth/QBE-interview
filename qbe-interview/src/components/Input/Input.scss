@@ -1,5 +1,10 @@
+@import '../../mixin.scss';
+
 .inputContainer{
     width: 80%;
+    @include xs{
+        width:98% ;
+    }
 }
 
 .input{
@@ -13,6 +18,12 @@
     margin-top: 15px;
     letter-spacing: 0.5px;
     outline: none;
+    @include sm{
+        width: 100%;
+    }
+    @include xs{
+        width:100% ;
+    }
 }
 
 .alert{

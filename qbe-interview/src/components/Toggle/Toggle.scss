@@ -1,0 +1,66 @@
+@import '../../mixin.scss';
+
+.tabContainer{
+    border: 2px solid rgb(188, 184, 184);
+    width: 60% ;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 6px;
+    border-radius: 5px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    margin-top: 30px;
+    // border: 1px solid red;
+    @include md{
+        width: 60%;
+        margin-top: 30px;
+    }
+    @include sm{
+        width: 70%;
+        margin-bottom: 30px;
+    }
+    @include xs{
+        width:95% ;
+    }
+}
+
+.tabs{
+    display: flex;
+    align-items: center;
+    // padding: 8px 15px;
+    color: gray;
+    border-radius: 5px;
+    cursor: pointer;
+    @include xs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+    }
+}
+
+.tab1{
+    width: 60%;
+    @include md{
+        width: 60%;
+    }
+}
+.tab2{
+    width: 37%;
+}
+
+.activeTab{
+    background-color: rgba(77, 78, 127, 0.967);
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 8px 15px;
+    color: whitesmoke;
+    border-radius: 5px;
+    @include xs{
+        // height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+    }
+}
