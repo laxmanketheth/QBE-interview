@@ -4,7 +4,6 @@
     height: 96vh;
     @include sm{
         height: 90vh;
-        // width: 100%;
     }
 }
 
@@ -22,12 +21,10 @@
 }
 
 .panelCard {
-    // color: red;
     color: rgb(13, 45, 78);
     height: 70vh;
     width: 40vw;
     background-color: #fff;
-    // border: 2px solid red; 
     box-shadow: 1px 1px 3px 2px gainsboro;
     text-align: center;
     display: flex;
@@ -56,7 +53,6 @@
     justify-content: center;
     align-items: center;
     @include md {
-        // border: 1px solid red;
         width: 50vw;
     }
     @include xxs{

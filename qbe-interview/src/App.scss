@@ -9,8 +9,6 @@
 .App{
   background-color: black;
   height: 110vh;
-  border: 1px solid green;
-  width: 100vw;
   @include sm{
     height: 100vh;
   }

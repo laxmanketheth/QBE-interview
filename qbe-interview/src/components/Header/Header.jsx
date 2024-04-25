@@ -10,7 +10,7 @@ const Header = () => {
         <div className='OuterContainer'>
             <div className='container'>
                 <div className='logo'>
-                    <img src="QBE logo.png" alt="" />
+                    <img src="QBE logo.png" alt="logo" />
                 </div>
 
                 <Steps />
